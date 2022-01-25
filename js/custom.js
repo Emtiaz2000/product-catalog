@@ -115,7 +115,7 @@ productAdd.addEventListener('click', (e)=>{
 filterInput.addEventListener('keyup', (e)=>{
     const text = e.target.value;
     document.querySelectorAll('.collection .collection-item').forEach( item => {
-        console.log(item.firstChild.firstChild);
+        console.log(item.children[0].textContent);
     });
 
 }); 
